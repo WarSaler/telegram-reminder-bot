@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# macOS
+.DS_Store
+
+# Docker-артефакты и архивы
+*.tar.gz
+
+# Лог-файлы
+*.log
