@@ -18,7 +18,7 @@ BOT_TOKEN = os.environ['BOT_TOKEN']
 CHAT_ID   = os.environ['CHAT_ID']
 PORT      = int(os.environ.get("PORT", "8000"))
 
-# — HTTP-healthcheck (Render смотрит на порт) —
+# — HTTP-healthcheck для Render —
 class HealthHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
@@ -31,7 +31,7 @@ def run_http_server():
     logger.info(f"HTTP healthcheck listening on port {PORT}")
     server.serve_forever()
 
-# — Error-handler: глушим только конфликтные ошибки —
+# — Error-handler: глушим только Conflict —
 def error_handler(update, context):
     err = context.error
     if isinstance(err, Conflict):
@@ -60,10 +60,10 @@ def hourly_job(context: CallbackContext):
 
 # — Точка входа —
 def main():
-    # 1) Старт HTTP-сервера в фоне
+    # 1) Запускаем HTTP-сервер в фоне
     threading.Thread(target=run_http_server, daemon=True).start()
 
-    # 2) Телеграм-бот
+    # 2) Инициализируем телеграм-бота
     updater = Updater(token=BOT_TOKEN, use_context=True)
     updater.bot.delete_webhook()
     dp = updater.dispatcher
