@@ -33,7 +33,7 @@ MSK = pytz.timezone("Europe/Moscow")
 # — Ваше боевое расписание —
 SCHEDULE = [
     { "time": "20:50", "text": '🔄 <a href="https://docs.google.com/spreadsheets/d/1LggaqDZjPwGGj7Mqher4D6mHhgmhL1Ed/edit?pli=1&gid=1095733793">Переключить депозиты из таблицы API deposits</a>' },
-    { "time": "20:50", "text": '📢 <b>Авто методы:</b>\nВыключить депозиты BDT_rocket_gb в админке (либо попросить коллегу) Выключили BDT_rocket_gb на сайте\n@jurxis @nii_med @gnxt_monitoring @Lika_mbt @Vikgmbt' },
+    { "time": "20:50", "text": '📢 <b>Авто методы:</b>\n➖ <a href="https://mostbet2.com/admin/app/paymentroute/list?filter%5BpaymentMethod%5D%5Bvalue%5D=rocket_gb">Выключить депозиты BDT_rocket_gb в админке</a> (либо попросить коллегу)\n✅ Выключили BDT_rocket_gb на сайте\n@jurxis @nii_med @gnxt_monitoring @Lika_mbt @Vikgmbt' },
     { "time": "21:55", "text": '❌ <a href="https://mostbet2.com/admin/payout-route/list?filter%5BpayoutMethod%5D%5Bvalue%5D=khalti_birpay">Выключить метод выплат Khalti_birpay в админке</a>' },
     { "time": "22:20", "text": '🔄 <a href="https://docs.google.com/spreadsheets/d/1LggaqDZjPwGGj7Mqher4D6mHhgmhL1Ed/edit?pli=1&gid=1393952854">Сделать переключение депозитов BDT</a>' },
     { "time": "02:45", "text": '🔄 <a href="https://docs.google.com/spreadsheets/d/1LggaqDZjPwGGj7Mqher4D6mHhgmhL1Ed/edit?pli=1&gid=1393952854">Сделать переключение ручных депозитов BDT</a>' },
