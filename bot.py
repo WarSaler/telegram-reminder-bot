@@ -178,6 +178,8 @@ def main():
     # Планируем рассылку
     schedule_notifications(updater.job_queue)
 
+    # (Удалено: тестовое ежечасное уведомление run_repeating)
+
     # Запускаем polling
     updater.start_polling(drop_pending_updates=True)
     logger.info("Polling начат, бот готов к работе")
